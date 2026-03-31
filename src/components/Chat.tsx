@@ -43,7 +43,7 @@ const Chat = () => {
 
     setLoading(true)
     try {
-      const response = await fetch('/api/openai/v1/chat/completions', {
+      const response = await fetch('https://api.groq.com/openai/v1/chat/completions', {
         method: 'POST',
         headers: {
           Authorization: `Bearer ${import.meta.env.VITE_GROQ_API_KEY}`,
